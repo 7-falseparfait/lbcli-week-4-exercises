@@ -10,4 +10,4 @@ MESSAGE_HEX=$(echo -n "btrust builder 2026" | xxd -p)
 
 bitcoin-cli -regtest createrawtransaction \
   "[{\"txid\":\"$txid\",\"vout\":0},{\"txid\":\"$txid\",\"vout\":1}]" \
-  "{\"data\":\"$MESSAGE_HEX\",\"2MvLcssW49n9atmksjwg2ZCMsEMsoj3pzUP\":0.20000000}" | tr -d '\n'
+  "{\"data\":\"$MESSAGE_HEX\",\"2MvLcssW49n9atmksjwg2ZCMsEMsoj3pzUP\":0.20000000}"
